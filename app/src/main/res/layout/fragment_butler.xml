@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="语音助手"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/butler_llayout"
+        android:layout_margin="3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:lines="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/butler_send_btn"
+            android:layout_margin="1dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimary"
+            android:text="@string/message_send"
+            android:textSize="@dimen/guide_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>
