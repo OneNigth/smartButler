@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 import com.yj.smartbutler.R;
+import com.yj.smartbutler.view.CustomDialog;
 import com.yj.smartbutler.view.fragment.ButlerFragment;
 import com.yj.smartbutler.view.fragment.GirlsFragment;
 import com.yj.smartbutler.view.fragment.SelectFragment;
@@ -29,7 +30,6 @@ public class MainActivity extends BaseActivity {
     private List<String> mTabTitles;
     //fragment
     private List<Fragment> mFragments;
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,6 +105,8 @@ public class MainActivity extends BaseActivity {
 
             }
         });
+        //预加载
+        mViewPager.setOffscreenPageLimit(mFragments.size());
         //绑定viewpager
         mTabLayout.setupWithViewPager(mViewPager);
 

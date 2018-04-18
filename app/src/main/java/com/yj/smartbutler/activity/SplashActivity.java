@@ -66,7 +66,7 @@ public class SplashActivity extends BaseActivity {
             ShareUtil.putBoolean(context, MyConstant.IS_FIRST_RUN, false);
             LogUtils.d("GuideActivity");
         } else {//跳到主页
-            intent = new Intent(context, MainActivity.class);
+            intent = new Intent(context, LoginActivity.class);
             LogUtils.d("MainActivity");
         }
         startActivity(intent);

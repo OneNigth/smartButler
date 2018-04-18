@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_name_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/guide_textsize" />
+
+        <EditText
+            android:lines="1"
+            android:id="@+id/login_username_et"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:textSize="@dimen/guide_textsize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass_world_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/guide_textsize" />
+
+        <EditText
+            android:lines="1"
+            android:id="@+id/login_password_et"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:textColor="@android:color/white"
+            android:textColorLink="@android:color/white"
+            android:textSize="@dimen/guide_textsize" />
+    </LinearLayout>
+    <CheckBox
+        android:id="@+id/remember_password_check"
+        android:layout_marginRight="@dimen/radio_padding_size"
+        android:layout_gravity="right"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/regist_textsize"
+        android:text="@string/remember_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/login_user_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/login_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/guide_textsize" />
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/regist_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regist_user"
+            android:textSize="@dimen/regist_textsize" />
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/forgot_password_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/forgot_passworld_text"
+            android:textSize="@dimen/regist_textsize" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <external-path path="" name="camera_photos" />
+    <files-path path="" name="photos" />
+    <!--这里的"Cache/"就是问题中抛出异常的那个路径-->
+</resources>

@@ -118,7 +118,7 @@ public class GuideActivity extends BaseActivity  {
         switch (view.getId()) {
             case R.id.splash_jump_btn://点击跳过导航按键
             case R.id.guide_enter_btn://点击进入按键
-                Intent intent = new Intent(context, MainActivity.class);
+                Intent intent = new Intent(context, LoginActivity.class);
                 startActivity(intent);
                 finish();
                 break;
